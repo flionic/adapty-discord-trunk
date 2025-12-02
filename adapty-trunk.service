@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/home/apps/adapty-discord-trunk
-ExecStart=/usr/local/bin/pipenv run flask run -p 25005
+ExecStart=/usr/local/bin/pipenv run flask run -p 25006
 
 StandardOutput=syslog
 StandardError=syslog

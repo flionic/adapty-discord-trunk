@@ -1,0 +1,15 @@
+[Unit]
+Description=DidWW Flask Tunnel
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/apps/didww-tunnel
+ExecStart=/usr/local/bin/pipenv run flask run -p 27001
+
+StandardOutput=syslog
+StandardError=syslog
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

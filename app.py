@@ -62,7 +62,7 @@ def webhook():
         "avatar_url": adapty_avatar_url,
         "embeds": [
             {
-                "description": f"📍[Customer]({adapty_url}/{profile_id}) event **{humanize_event(event_type)}**.",
+                "description": f"📍Customer [{profile_id[:4]}]({adapty_url}/{profile_id}) event **{humanize_event(event_type)}**.",
                 "color": color,
                 "fields": fields,
                 "footer": {"text": f"{env} environment"}
